@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Murthy Advisory · Creative Directions</title>
+  <meta name="description" content="Two creative directions for Murthy Advisory: Both Sides and Emergence. An interactive presentation by Oh, løøk! Studio.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b0c0c">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Oh, løøk! Studio display face (Softie): Adobe Fonts kit of the studio site, loaded under Adobe's licence (not redistributed) -->
+  <link rel="stylesheet" href="https://use.typekit.net/ssr7kbu.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="module" crossorigin src="./assets/index-SJWDSfM4.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DWud9Gmm.css">
+</head>
+<body>
+  <a class="skip-link" href="#deck" data-i18n="ui.skipLink">Skip to the presentation</a>
+
+  <!-- Persistent particle field: front during the opening, ambient behind the first chapters and the closing -->
+  <canvas id="field" aria-hidden="true"></canvas>
+
+  <!-- Opening: Hello, Sowmya. -->
+  <section id="opening" class="opening" aria-label="Welcome" data-i18n-attr="aria-label:ui.welcome">
+    <h1 class="sr-only" data-i18n="open.greeting">Hello, Sowmya.</h1>
+    <div class="opening__invite" id="openingInvite" aria-hidden="true">
+      <p class="opening__line" id="openingLine"></p>
+      <button class="btn btn--light" id="openingCta" type="button" tabindex="-1"><span></span><i aria-hidden="true">&rarr;</i></button>
+    </div>
+    <button class="opening__skip" id="openingSkip" type="button"></button>
+    <p class="opening__credit"><span class="chrome__studio" role="img" aria-label="Oh, løøk! Studio"></span><span data-i18n="ui.forMurthy">for Murthy Advisory</span></p>
+  </section>
+
+  <!-- Persistent interface -->
+  <div class="scrim scrim--top" id="scrimTop" aria-hidden="true"></div>
+  <div class="scrim scrim--bot" id="scrimBot" aria-hidden="true"></div>
+  <header class="chrome chrome--top" id="chromeTop" aria-label="Presentation" data-i18n-attr="aria-label:ui.presentation">
+    <div class="chrome__id">
+      <span class="chrome__studio" role="img" aria-label="Oh, løøk! Studio"></span>
+      <span class="chrome__sep" aria-hidden="true"></span>
+      <button class="chrome__home" id="homeBtn" type="button" aria-label="Murthy Advisory · back to the start" data-i18n-attr="aria-label:ui.homeBtn"><span class="chrome__dot" aria-hidden="true"></span><span class="chrome__brand">Murthy Advisory</span></button>
+    </div>
+    <div class="chrome__chapter" id="chapterLabel" aria-live="polite"></div>
+    <div class="chrome__right">
+      <div class="chrome__lang" id="langSel" role="group" aria-label="Language" data-i18n-attr="aria-label:ui.language"><button type="button" data-lang="en" lang="en" aria-pressed="true" title="English">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="es" lang="es" aria-pressed="false" title="Español">ES</button></div>
+      <button class="chrome__btn" id="statusBtn" type="button" aria-pressed="false" title="Show content status (S)" data-i18n="ui.status" data-i18n-attr="title:ui.statusTitle">Status</button>
+      <button class="chrome__btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu" data-i18n="ui.chapters">Chapters</button>
+    </div>
+  </header>
+  <footer class="chrome chrome--bottom" id="chromeBottom">
+    <div class="progress" id="progress" aria-hidden="true"><div class="progress__fill" id="progressFill"></div><div class="progress__ticks" id="progressTicks"></div></div>
+    <div class="chrome__step">
+      <button class="chrome__arrow" id="prevBtn" type="button" aria-label="Previous" data-i18n-attr="aria-label:ui.prev"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+      <span class="chrome__count" id="count" aria-live="off">01 / 01</span>
+      <button class="chrome__arrow" id="nextBtn" type="button" aria-label="Next" data-i18n-attr="aria-label:ui.next"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    </div>
+  </footer>
+
+  <nav class="menu" id="menu" aria-label="Chapters" data-i18n-attr="aria-label:ui.chapters" hidden>
+    <div class="menu__inner" id="menuInner"></div>
+    <button class="menu__close" id="menuClose" type="button" data-i18n="ui.closeEsc">Close <span aria-hidden="true">esc</span></button>
+  </nav>
+
+  <main id="deck" tabindex="-1"></main>
+
+  <noscript><p style="padding:2rem;color:#fff;background:#0b0c0c">This presentation needs JavaScript.</p></noscript>
+</body>
+</html>

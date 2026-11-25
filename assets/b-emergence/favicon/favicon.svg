@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+<!-- B · Calibrated Rise, optical cut (BANDS.r1s, unchanged). Box 11.43 × 15.43 px = symbol 14 px effective (base → tip), centred in 16 × 16.
+     Light tabs: Deep Pool + Signal Mustard. Dark tabs: Mist + Signal Mustard. Study asset, not approved. -->
+<style>.l{fill:#0F2621}.r{fill:#D0A545}@media (prefers-color-scheme: dark){.l{fill:#9AADA5}}</style>
+<svg x="2.286" y="0.286" width="11.429" height="15.429" viewBox="10 -4 80 108">
+<defs><clipPath id="b"><rect x="-5" y="-5" width="110" height="62"/><rect x="-5" y="70" width="110" height="14"/><rect x="-5" y="90" width="110" height="10"/></clipPath></defs>
+<g clip-path="url(#b)"><path class="l" d="M50 100C18 78 22 30 60 2C70 34 66 72 50 100Z"/><path class="r" d="M50 100C66 72 70 34 60 2C82 34 80 78 50 100Z" transform="translate(2.6 0)"/></g>
+</svg>
+</svg>
